@@ -1,15 +1,15 @@
 {
     "tasks": [
         {
-            "name": "Send Daily Sales Report Email",
+            "name": "ทดสอบ - Python test Email with Attachment",
             "type": "send_email",
             "parameters": {
                 "recipients": {
                     "to": ["cannonnam24@gmail.com"],
                     "cc": ["cannonnan@gmail.com"]
                 },
-                "subject_template": "Daily Sales Report - {report_date}",
-                "body_template": "Dear Team,\n\nPlease find the latest sales report for {report_date} attached. Total sales: ${sales_figure:.2f}. Total active customers: {total_customers}.\n\nBest regards,\nAutomated Agent",
+                "subject_template": "ทดสอบ - Python test Email",
+                "body_template": "นายพีรพล พรหมมิ รหัส 683380584-3 ",
                 "attachments": [
                     "data/reports/sales_report.pdf",
                     "data/reports/summary_data.xlsx"
@@ -18,14 +18,14 @@
             }
         },
         {
-            "name": "Simulate Incoming Request Email (to self)",
+            "name": "ทดสอบ - Python test Email for Recieving",
             "type": "send_email",
             "parameters": {
                 "recipients": {
-                    "to": ["your_gmail_address@gmail.com"]
+                    "to": ["cannonnan@gmail.com"]
                 },
                 "subject_template": "Data Request for {report_date} - Urgent",
-                "body_template": "Hello Agent,\n\nWe need the latest data for {report_date}. Please process urgently. This is an urgent request for new data processing.",
+                "body_template": "นายพีรพล พรหมมิ รหัส 683380584-3",
                 "attachments": ["data/reports/sales_report.pdf"],
                 "is_html": false
             }
